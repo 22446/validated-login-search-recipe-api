@@ -1,0 +1,12 @@
+.parent{
+    height: 100vh; 
+    background-color: #24353F;
+}
+.row{
+    background-color: #24353F;
+    box-shadow:2px 4px 16px black
+}
+
+i{
+    cursor: pointer;
+}
