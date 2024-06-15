@@ -24,7 +24,7 @@ function Create()
            
         if(signUp.Email==arr[i].Email){
                   Pname=""
-                  Pname="the email is already"
+                  Pname="the email is already exists"
                   validationp.innerHTML=Pname
                   validationp.classList.remove("text-success")
                   validationp.classList.add("text-danger")
@@ -102,7 +102,7 @@ function validationforName(){
 function validationforPass(){
 
     Pname=""
-    let regex=/^[A-Za-z]{3,}$/
+    let regex=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
     if(regex.test(passInput.value)==true){
          Pname="Sucsess"
          validationp.innerHTML=Pname
@@ -114,7 +114,7 @@ function validationforPass(){
     else 
     {
         Pname=""
-        Pname="Your password Is Invalid"
+        Pname="Password should contain minimum eight characters, at least one letter and one number"
         validationp.innerHTML=Pname
         validationp.classList.remove("text-success")
         validationp.classList.add("text-danger")
